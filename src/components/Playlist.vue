@@ -1,12 +1,11 @@
 <template>
   <div>
-    <h1>This Week's Playlist</h1>
-    <playlist-track v-for="(track, index) in tracks" :key="index" :index="index + 1" :track="track.track"></playlist-track>
+    <playlist-track v-for="(searchTerm, index) in tracks" :key="index" :index="index + 1" :search="searchTerm"></playlist-track>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
+
 import PlaylistTrack from './Track';
 export default {
   name: 'Playlist',
@@ -18,17 +17,30 @@ export default {
   },
   data() {
     return {
-      tracks: []
+      tracks: [
+        'Doves In The Wind',
+        'Sex Super Smash Bros.',
+        'Not in Love We\'re Just High',
+        'How to Be a Heartbreaker',
+        'Less I know The Better',
+        'She (Featuring Frank Ocean)',
+        'Cola',
+        'Dead To Me Kali Uchis',
+        'Friend Zone Thundercat',
+        'Gettin\' Jiggy Wit It',
+        'Blue Marina',
+        'Heartbeat',
+        'Pink Lemonade Wombats',
+        'Gold Digger',
+        'Body Of My Own',
+        'OKOKOK',
+        'False Alarm',
+        'Don\'t You Forget About Me',
+      ]
     }
   },
   mounted() {
-    axios.get(`https://api.spotify.com/v1/playlists/${this.playlistId}/tracks`, {
-      headers: {
-        Authorization: 'Bearer BQCAtmXXBlS4cojDvcAW4D2GQzdbp-bTYTqTj1T4B8iU4qe_djGjpW6bGl1k-M23y5y0L-IF9rdZOXn6kBw',
-      }
-    }).then(response => {
-      this.tracks = response.data.items;
-    });
+
   }
 }
 </script>

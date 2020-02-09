@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>{{ msg }}</h1>
-    <playlist :playlist-id="'2VaJabIVQ9EBRmDyXmUHKB'"></playlist>
+    <h1>This Week's Playlist</h1>
+    <playlist></playlist>
   </div>
 </template>
 

@@ -1,6 +1,10 @@
 <template>
   <div class="controls">
-    <div :class="playing ? 'pause button' : 'play button'" @click="toggleStream"></div>
+    <div>
+      <h2>Wiley Radio</h2>
+      <h3>Listen now</h3>
+    </div>
+    <div :class="playing ? 'pause stream-button' : 'play stream-button'" @click="toggleStream"></div>
     <audio id="player">
       <source src="http://wileyradio.org:8000/liq.mp3" type="audio/mpeg">
     </audio>
@@ -40,17 +44,36 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .button {
+  .controls {
+    background-color: #181B35;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 60px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 5px 0;
+    }
+    h3 {
+      font-size: 14px;
+      margin: 0 0 0 0;
+    }
+  }
+
+  .stream-button {
     width: 40px;
     height: 40px;
     background: #F88821;
     border: none;
     border-radius: 100%;
     cursor: pointer;
-
-    margin-top: 10px;
-    position: absolute;
-    right: 4em;
 
     &:focus {
       outline: 0;
