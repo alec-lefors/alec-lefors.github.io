@@ -103,6 +103,8 @@ export default {
         font-size: 2rem;
         width: 50px;
         left: -50px;
+      }
+      @include breakpoint(small) {
         top: 34px;
       }
       content: attr(data-key);
