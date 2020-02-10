@@ -1,5 +1,5 @@
 <template>
-  <div class="track" :data-key="index" v-if="track">
+  <div class="track" :data-key="index" v-if="track && !error">
     <div class="image" :style="{backgroundImage: `url('${image}')`}"></div>
     <div class="track-info">
       <h2 v-text="track.trackName"></h2>
@@ -33,7 +33,8 @@ export default {
   },
   data() {
     return {
-      track: {}
+      track: {},
+      error: false
     }
   },
   mounted() {
@@ -45,6 +46,8 @@ export default {
       limit: '1',
     }).then(json => {
       this.track = json.results[0];
+    }).catch(() => {
+      this.error = true;
     });
   }
 }
