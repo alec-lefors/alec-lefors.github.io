@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
   name: 'Playlist-Track',
   props: {
@@ -39,9 +37,14 @@ export default {
     }
   },
   mounted() {
-    axios.get(`https://itunes.apple.com/search?term=${this.search}&country=US&media=music&entity=song&limit=1`, {
-    }).then(response => {
-      this.track = response.data.results[0];
+    this.$jsonp(`https://itunes.apple.com/search`, {
+      term: this.search,
+      country: 'US',
+      media: 'music',
+      entity: 'song',
+      limit: '1',
+    }).then(json => {
+      this.track = json.results[0];
     });
   }
 }

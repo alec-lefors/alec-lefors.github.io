@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 export default {
   name: 'Stream',
   props: {
@@ -25,9 +24,7 @@ export default {
     }
   },
   mounted() {
-    axios.get(`https://wileyradio.org/user.php`).then(response => {
-      this.user = response.data;
-    });
+
   },
   methods: {
     toggleStream() {
