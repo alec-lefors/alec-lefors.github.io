@@ -24,7 +24,11 @@ export default {
     }
   },
   mounted() {
+    this.$jsonp('https://wileyradio.org/user.php', {
 
+    }).then(json => {
+      json.toString();
+    })
   },
   methods: {
     toggleStream() {

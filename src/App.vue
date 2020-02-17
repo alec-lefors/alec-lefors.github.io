@@ -6,16 +6,18 @@
         <div class="nav-group">
           <h2>Wheezy</h2>
           <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
+          <!-- <router-link to="/about">About</router-link> -->
         </div>
         <div class="nav-group">
           <h2>Playlists</h2>
-          <router-link to="/">This Week</router-link>
-          <router-link to="/last-week">Last Week</router-link>
+          <!-- <router-link to="/">This Week</router-link> -->
+          <router-link to="/week/0">Last Week</router-link>
         </div>
       </nav>
       <div class="container">
-        <router-view/>
+        <keep-alive>
+          <router-view/>
+        </keep-alive>
       </div>
     </div>
     <stream></stream>
@@ -60,7 +62,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
     margin: 0;
-    
+
     &:before {
       content: '';
       width: 100vw;
@@ -93,6 +95,9 @@ export default {
   .container {
     @include breakpoint(medium) {
       position: sticky;
+    }
+    @include breakpoint(small) {
+      padding-bottom: 80px;
     }
     grid-column: 2 / 2;
     min-height: calc(100vh - 144px);

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>This Week's Playlist</h1>
-    <playlist></playlist>
+    <playlist :tracks="tracks"></playlist>
   </div>
 </template>
 
@@ -15,6 +15,26 @@ export default {
   },
   props: {
     msg: String
+  },
+  data() {
+    return {
+      tracks: [
+        "Back to Myself Hero The Band",
+        "Bass Jam",
+        "Breathe Deeper",
+        "Motions - Far Out Version",
+        "Slide Away",
+        "Close Your Eyes (And Count To Fuck)",
+        "Leyla Altin Gun",
+        "Talking Elderbrook",
+        "Good Day Surfaces",
+        "Norman fucking Rockwell",
+        "Superposition Young the Giant",
+        "Scrawny Wallows",
+        "Seashore The Regrettes",
+        "Dontmakemefallinlove",
+      ]
+    }
   }
 }
 </script>
