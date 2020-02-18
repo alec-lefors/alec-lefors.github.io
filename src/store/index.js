@@ -4,12 +4,58 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+	state: {
+		playlists: [
+			{
+				name: 'Hour 14 (13)',
+				hour: 14,
+				tracks: [
+					"Back to Myself Hero The Band",
+					"Bass Jam",
+					"Breathe Deeper",
+					"Motions - Far Out Version",
+					"Slide Away",
+					"Close Your Eyes (And Count To Fuck)",
+					"Leyla Altin Gun",
+					"Talking Elderbrook",
+					"Good Day Surfaces",
+					"Norman fucking Rockwell",
+					"Superposition Young the Giant",
+					"Scrawny Wallows",
+					"Seashore The Regrettes",
+					"Dontmakemefallinlove",
+				]
+			},
+			{
+				name: 'Songs for ~Judy~',
+				hour: 13,
+				tracks: [
+					'Doves In The Wind',
+					'Sex Super Smash Bros.',
+					'Not in Love We\'re Just High',
+					'How to Be a Heartbreaker',
+					'Less I know The Better',
+					'She (Featuring Frank Ocean)',
+					'Cola',
+					'Dead To Me Kali Uchis',
+					'Friend Zone Thundercat',
+					'Gettin\' Jiggy Wit It',
+					'Blue Marina',
+					'Heartbeat',
+					'Pink Lemonade Wombats',
+					'Gold Digger',
+					'Body Of My Own',
+					'OKOKOK',
+					'False Alarm',
+					'Don\'t You Forget About Me',
+				]
+			}
+		]
+	},
+	mutations: {
+	},
+	actions: {
+	},
+	modules: {
+	}
 })

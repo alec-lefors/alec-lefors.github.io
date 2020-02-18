@@ -1,7 +1,8 @@
 <template>
-  <div class="home">
-    <playlist :tracks="tracks"></playlist>
-  </div>
+	<div class="home">
+		<h1 v-text="playlist.name"></h1>
+		<playlist :tracks="playlist.tracks"></playlist>
+	</div>
 </template>
 
 <script>
@@ -15,34 +16,12 @@ export default {
 	},
 	data() {
 		return {
-			tracks: []
+			playlist: {}
 		}
 	},
 	mounted() {
-		const playlists = [
-			[
-				'Doves In The Wind',
-				'Sex Super Smash Bros.',
-				'Not in Love We\'re Just High',
-				'How to Be a Heartbreaker',
-				'Less I know The Better',
-				'She (Featuring Frank Ocean)',
-				'Cola',
-				'Dead To Me Kali Uchis',
-				'Friend Zone Thundercat',
-				'Gettin\' Jiggy Wit It',
-				'Blue Marina',
-				'Heartbeat',
-				'Pink Lemonade Wombats',
-				'Gold Digger',
-				'Body Of My Own',
-				'OKOKOK',
-				'False Alarm',
-				'Don\'t You Forget About Me',
-			]
-		];
 		const id = this.$route.params.id;
-		this.tracks = playlists[id];
+		this.playlist = this.$store.state.playlists.find(x => x.hour == id);
 	}
 }
 </script>

@@ -10,13 +10,17 @@
         </div>
         <div class="nav-group">
           <h2>Playlists</h2>
+          <div>
+            <router-link v-for="(playlist, index) in playlists" :key="index" :to="`/hour/${playlist.hour}`">
+              {{ playlist.name }}
+            </router-link>
+          </div>
           <!-- <router-link to="/">This Week</router-link> -->
-          <router-link to="/week/0">Last Week</router-link>
         </div>
       </nav>
       <div class="container">
         <keep-alive>
-          <router-view/>
+          <router-view :key="$route.fullPath"/>
         </keep-alive>
       </div>
     </div>
@@ -30,6 +34,12 @@ import Stream from './components/Stream';
 export default {
   components: {
     Stream,
+  },
+  computed: {
+    playlists() {
+      let playlists = this.$store.state.playlists;
+      return playlists.sort((a, b) => (a.hour > b.hour) ? -1 : 0);
+    }
   }
 }
 </script>

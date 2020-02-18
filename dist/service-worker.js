@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.26c1dcad4b5a969cb9f934b94dab403a.js"
+  "/precache-manifest.785c170a6734304c51ca52b6191dcf69.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "wheezy"});
