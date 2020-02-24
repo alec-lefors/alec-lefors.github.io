@@ -16,23 +16,13 @@ export default {
   props: {
     msg: String
   },
+  created() {
+    this.tracks = this.$store.state.playlists[0].tracks;
+  },
   data() {
     return {
       tracks: [
-        "Back to Myself Hero The Band",
-        "Bass Jam",
-        "Breathe Deeper",
-        "Motions - Far Out Version",
-        "Slide Away",
-        "Close Your Eyes (And Count To Fuck)",
-        "Leyla Altin Gun",
-        "Talking Elderbrook",
-        "Good Day Surfaces",
-        "Norman fucking Rockwell",
-        "Superposition Young the Giant",
-        "Scrawny Wallows",
-        "Seashore The Regrettes",
-        "Dontmakemefallinlove",
+
       ]
     }
   }

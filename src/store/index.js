@@ -7,6 +7,27 @@ export default new Vuex.Store({
 	state: {
 		playlists: [
 			{
+				name: 'Hour 15',
+				hour: 15,
+				tracks: [
+					"My Type Saint Motel",
+					"Deceptacon",
+					"woods Mac Miller",
+					"Feel it all around Washed out",
+					"#88 Lo-Fang",
+					"Stressin King Gizard",
+					"Your Love Glass Animals",
+					"Die Young Sylvan Esso",
+					"Scrawny Wallows",
+					"Shampain Marina",
+					"SICKO MODE",
+					"Zombie feat. Panther",
+					"Steve McQueen",
+					"I want It All COIN",
+					"A thousand words Jay Som",
+				]
+			},
+			{
 				name: 'Hour 14 (13)',
 				hour: 14,
 				tracks: [
