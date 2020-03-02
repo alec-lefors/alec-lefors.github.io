@@ -6,6 +6,25 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 	state: {
 		playlists: [
+{
+name: 'Hour 16',
+hour: 16,
+tracks: [
+"Life Itself Glass Animals",
+"Yes Britannaia Watsky",
+"Back In Black",
+"Don't Bring Me Down Electric Light Orchestra",
+"Big Poppa - 2007 Remaster",
+"Gimme Shelter",
+"Layla - 40th Anniversary Version",
+"Worry Rock Green Day",
+"Creep Radiohead",
+"Green River Creedence",
+"Killing In the Name Rage Against",
+"I appear missing queens of the stone age",
+"Don't cha the pussy cat dolls"
+]
+},
 			{
 				name: 'Hour 15',
 				hour: 15,
