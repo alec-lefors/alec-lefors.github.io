@@ -22,5 +22,5 @@ I'm a passionate software developer with a love for video games, public transit,
 
 I specialize in PHP and the Laravel ecosystem, creating complex web applications, from custom e-commerce platforms to managing sports leagues. I'm committed to delivering innovative solutions that meet diverse project needs.
 
-[Github](https://github.com/alec-lefors) [LinkedIn](https://www.linkedin.com/in/alec-lefors-966950163/)
+[Github](https://github.com/alec-lefors) [LinkedIn](https://www.linkedin.com/in/alec-lefors-966950163/) [Mastodon](https://urbanists.social/@amenably){:rel="me" :style="display: none"}
 ::
