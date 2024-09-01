@@ -1,0 +1,73 @@
+// @use "~/assets/scss/animations.scss";
+// @use "~/assets/scss/media-queries.scss";
+
+:root {
+    --primary-color: #08b2e3;
+    --secondary-color: #175069;
+    --accent-color: #ba1200;
+    --bg-color: #031927;
+    --fg-color: #eee5e9;
+}
+
+@font-face {
+    font-family: Sono;
+    src: url("~/assets/fonts/Sono[MONO,wght].ttf");
+}
+
+body {
+    margin: 0;
+    font-family: Sono, monospace;
+    font-variation-settings: "MONO" 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-variation-settings: "MONO" 0;
+    margin: 0;
+    a {
+        cursor: text;
+        color: var(--fg-color);
+        text-decoration: none;
+    }
+}
+
+.primary-bg, body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+.invert-bg {
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+    a {
+        color: var(--secondary-color);
+    }
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+    color: var(--fg-color);
+    a {
+        color: var(--bg-color);
+    }
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color);
+    color: var(--fg-color);
+    a {
+        color: var(--accent-color);
+    }
+}
+
+.accent {
+    background-color: var(--accent-color);
+    color: var(--fg-color);
+}
+
+a {
+    color: var(--primary-color);
+}
