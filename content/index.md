@@ -18,9 +18,9 @@ layout: home
 
 ::homepage-panel{invert}
 ## Hi!
-I am a passionate software developer with a deep love for video games, public transit, and all things Star Wars. Born and raised in Louisiana, I have a strong appreciation for Cajun cuisine and an unhealthy fondness for sweet tea. My journey into programming began at the age of 10, when I first explored creating a web browser using C# and Visual Studio.
+I'm a passionate software developer with a love for video games, public transit, and Star Wars. Raised in Louisiana, I have a deep love for Cajun cuisine and an unhealthy fondness for sweet tea.
 
-Today, my expertise lies in PHP and the Laravel ecosystem, where I focus on building complex web applications, from custom e-commerce platforms to managing eSports leagues and tournaments. I am dedicated to delivering innovative solutions that meet the diverse needs of a project's stakeholders.
+I specialize in PHP and the Laravel ecosystem, creating complex web applications, from custom e-commerce platforms to managing sports leagues. I'm committed to delivering innovative solutions that meet diverse project needs.
 
 [Github](https://github.com/alec-lefors) [LinkedIn](https://www.linkedin.com/in/alec-lefors-966950163/)
 ::
