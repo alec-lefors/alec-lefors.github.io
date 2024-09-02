@@ -1,7 +1,12 @@
 ---
-title: 'Alec LeFors - Web Developer'
+title: 'Home'
 description: ''
 layout: home
+ogImage:
+    props:
+        title: Alec LeFors
+        description: My virtual business card on your screen. Web developer based in Chicago, IL
+        image: /images/pfp.jpg
 ---
 ::homepage-panel{primary main}
     ::card{name="Alec LeFors" location="Chicago, IL" email="contact@lefors.me" occupation="Web Developer"}

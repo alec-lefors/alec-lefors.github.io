@@ -8,9 +8,9 @@ defineProps({
 </script>
 <template>
     <div class="homepage-panel" :class="{'primary-bg': primary, 'invert-bg': invert, 'secondary-bg': secondary}">
-        <main v-if="!main">
+        <div class="homepage-content" v-if="!main">
             <slot></slot>
-        </main>
+        </div>
         <div v-else>
             <slot></slot>
         </div>

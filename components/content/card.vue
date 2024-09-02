@@ -28,7 +28,7 @@ onMounted(() => {
         let { isDesktop, isMobile } = context.conditions;
 
         const calculateMobileCardHeight = () => {
-            const contentHeight = document.querySelector('main').clientHeight;
+            const contentHeight = document.querySelector('.homepage-content').clientHeight;
             return `calc(98vh - ${contentHeight}px - 3rem)`;
         }
         // Business card scroll animation
