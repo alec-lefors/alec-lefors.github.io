@@ -1,11 +1,10 @@
 ---
 title: 'Home'
-description: ''
+description: 'My virtual business card on your screen. Web developer based in Chicago, IL'
 layout: home
 ogImage:
     props:
         title: Alec LeFors
-        description: My virtual business card on your screen. Web developer based in Chicago, IL
         image: /images/pfp.jpg
 ---
 ::homepage-panel{primary main}
