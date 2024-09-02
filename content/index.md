@@ -16,7 +16,7 @@ ogImage:
     **Skills:** Laravel, Vue.js, PHP, MySQL, PCI, W3C, Linux, Wordpress
     
     #picture
-        ::image{src="/images/pfp.jpg" alt="A picture of me"}
+    ![A picture of me](/images/pfp.jpg){sizes="600px md:900px"}
     ::
 ::
 
