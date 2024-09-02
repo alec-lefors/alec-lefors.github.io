@@ -16,7 +16,7 @@ ogImage:
     **Skills:** Laravel, Vue.js, PHP, MySQL, PCI, W3C, Linux, Wordpress
     
     #picture
-    ![A picture of me](/images/pfp.jpg){sizes="600px md:900px" format="webp" loading="lazy"}
+    ![A picture of me](/images/pfp.jpg){sizes="500px md:900px" format="webp"}
     ::
 ::
 
