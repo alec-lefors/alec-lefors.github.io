@@ -29,7 +29,7 @@ defineProps({
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(0.92rem, 2vw, 1.4rem);
 
     @include lt-md {
         padding-left: 1rem;

@@ -29,7 +29,7 @@ onMounted(() => {
 
         const calculateMobileCardHeight = () => {
             const contentHeight = document.querySelector('.homepage-content').clientHeight;
-            return `calc(98vh - ${contentHeight}px - 3rem)`;
+            return `calc(98svmax - ${contentHeight}px - 3rem)`;
         }
         // Business card scroll animation
         let tl = gsap.timeline({
@@ -71,6 +71,7 @@ onMounted(() => {
                 left: '50%',
                 xPercent: -50,
                 yPercent: -50,
+                width: isDesktop ? '50vw' : '80vw'
             }, {
                 rotation: 90,
                 top: isDesktop ? '50%' : '0',
@@ -114,7 +115,6 @@ onMounted(() => {
 <style lang="scss">
 .card-container {
     container: card / size;
-    width: 50vw;
     max-width: 60vh;
     aspect-ratio: 3.5 / 2;
     position: fixed;
@@ -122,9 +122,6 @@ onMounted(() => {
     filter: drop-shadow(0 0 40px var(--fg-color));
     -webkit-font-smoothing: antialiased;
     z-index: 1;
-    @include lt-md {
-        width: 80vw;
-    }
     .card {
         position: relative;
         width: 100%;
