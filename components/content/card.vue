@@ -29,7 +29,7 @@ onMounted(() => {
 
         const calculateMobileCardHeight = () => {
             const contentHeight = document.querySelector('.homepage-content').clientHeight;
-            return `calc(98svmax - ${contentHeight}px - 3rem)`;
+            return `calc(98dvmax - ${contentHeight}px - 3rem)`;
         }
         // Business card scroll animation
         let tl = gsap.timeline({

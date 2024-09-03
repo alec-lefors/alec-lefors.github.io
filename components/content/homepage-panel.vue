@@ -23,7 +23,7 @@ defineProps({
 
 <style lang="scss">
 .homepage-panel {
-    height: 100vh;
+    height: 100dvh;
     padding-left: min(50vw, 60vh);
     padding-right: 10rem;
     display: flex;
