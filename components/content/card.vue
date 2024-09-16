@@ -9,7 +9,6 @@ defineProps({
     email: String,
     occupation: String
 })
-const center = ref(true)
 onMounted(() => {
     gsap.to('.card-container', {autoAlpha: 1, duration: .23})
     gsap.to('.scroll-arrow', {
@@ -91,7 +90,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="card-container" :class="{center}">
+    <div class="card-container">
         <div class="card">
             <div class="card-front">
                 <h1 v-text="name" class="name"></h1>
