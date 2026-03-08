@@ -11,7 +11,7 @@ ogImage:
     ::card{name="Alec LeFors" location="Chicago, IL" email="contact@lefors.me" occupation="Web Developer"}
     **Age:** :age years old
 
-    **Occupation:** Systems Director @ [CMSA eSports](https://cmsaesports.com){:target="_blank"}
+    **Occupation:** Backend Lead @ Startup
     
     **Skills:** Laravel, Vue.js, PHP, MySQL, PCI, W3C, Linux, Wordpress
     
